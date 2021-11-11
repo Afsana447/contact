@@ -1,15 +1,14 @@
-/*
-google fonts
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Montserrat', sans-serif;
-*/
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
-/*google css section here*/
+
 *{
-	margin: 0;
-	padding: 0;
+ margin: 0;
+ padding: 0;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,span,input,button{
+ font-family: 'Playfair Display', serif;
 }
 .container{
 	width: 1140px;
@@ -18,181 +17,129 @@ font-family: 'Montserrat', sans-serif;
 a,a:hover{
 	text-decoration: none;
 }
+
 /*header section css*/
-header{
+.header{
 	width: 100%;
-	background: url(../img/banner2.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
+	display: flow-root;
 }
-.menu-bar{
+.navbar{
 	width: 100%;
 	float: left;
-	padding: 30px 10px;
-
-
+	padding: 30px 0px;
 }
 .logo{
-	width: 30%;
+	width: 20%;
 	float: left;
+	text-align: left;
 }
 .menu-item{
-	width: 70%;
-	float: left;
+	width: 80%;
+	float: right;
 	text-align: right;
 }
-
-.contact-no img{
-	vertical-align: middle;
-}
-.contact-no span{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	vertical-align: middle;
-	color: chocolate;
-}
-.main-menu{
-	margin: 14px 0;
-}
-.main-menu ul li{
+.menu-item ul li{
 	list-style: none;
 	display: inline-block;
 	margin-left: 52px;
+}
+.menu-item ul li a{
 
+	text-transform: uppercase;
+	color: red;
 }
-.main-menu ul li a{
-	font-family: 'Bebas Neue', cursive;
-	
-	color: chocolate;
-	letter-spacing: 4px;
-	font-size: 18px;
-	font-weight: 500;
+.menu-item ul li a:hover{
+	color: black;
 }
+/*banner section css*/
 .banner{
 	width: 100%;
-	float:left;
+	display: flow-root;
 }
-.banner-left{
-	width: 50%;
-	float: left;
+.post-content{
+	padding: 56px;
 }
-.banner-right{
-	width: 50%;
-	float:left; 
+.category{
+	text-transform: uppercase;
+	color: blue;
 }
-.left-content{
-	height: 60vh;
-	display: table-cell;
-	vertical-align: middle;
-}
-.left-content p{
-	border: 2px dashed black;
-	padding: 10px;
-	font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    color: chocolate;
-    font-size: 20px;
-    display: inline-block;
-}
-.left-content h1{
-
-font-family: 'Alfa Slab One', cursive;
-text-transform: uppercase;
-font-size: 83px;
-color: chocolate;
-letter-spacing: 4px;
-text-shadow: 3px 3px white;
+.title{
+	color: red;
+	margin: 20px 0;
 
 }
-.left-content h2{
-
-font-family: 'Alfa Slab One', cursive;
-text-transform: uppercase;
-color: chocolate;
-letter-spacing: 4px;
-font size: 63px;
-text-shadow:2px 2px white;
-}
-.right-content{
-	height: 60vh;
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-}
-.right-content img{
+.desc{
+	color: violet;
+	margin-bottom: 36px;
 
 }
-.right-content .circle{
-	height: 120px;
-	width: 120px;
-	background: red;
-	text-align: center;
-	
-	color: white;
-	border-radius:100%; 
-	position: absolute;
-	top: 45%;
-	bottom: 30%
-	left:45%;
-
+.comment{
+	text-transform: uppercase;
+	color: blue;
 }
-.inner-box{
-	height: 100px;
-	width: 100px;
-	text-align: center;
-	line-height: 100px;
-	color: white;
-	background: red;
-	border-radius:100%;
-	border: 2px dashed white;
-	position: absolute;
-	top: 8px;
-	left: 8px; 
-}
-.right-content .circle h1 span{
-	font-size: 18px;
-
-}
-.Burger-Slider{
+/* post gallery css */
+.posts{
 	width: 100%;
 	display: flow-root;
-	padding: 80px 0;
-
 }
-.slider-box{
-	background: white;
+.gallery{
+	padding: 56px;
+	display: flow-root;
+	
+}
+.post{
 	width: 100%;
 	float: left;
-	padding: 15px;
-	box-shadow: 15px 15px 20px 10px rgba(0,0,0);
 }
-.slider-left{
-	width: 50%;
+.left{
+	width: 48%;
 	float: left;
 }
-.slider-right{
-	width: 50%;
+.right{
+	width: 48%;
 	float: right;
 }
-.slider-left-content{
-	padding: 36px;
+.post .category{
+	margin-top: 24px;
 }
-.slider-left-content .sub-title{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 24px;
-	letter-spacing: 2px;
+/*subscription section css*/
+.subscription{
+	width: 100%;
+	display: flow-root;
+	background-color: chocolate;
+	text-align: center;
+	padding: 60px 0;
 }
-.slider-left-content h1{
-	font-family: 'Alfa Slab One', cursive;
-	color: chocolate;
-	text-transform: uppercase;
-	font-size: 34px;
-	letter-spacing: 2px;
+.subscription h1{
+	margin-bottom: 40px;
 }
-.slider-left-content .desc{
-	font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin-top: 15px;
+form input{
+	padding: 15px 0px;
+	width: 380px;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid white;
 }
+form input:focus{
+	outline: none;
+}
+form{
+	position: relative;
+}
+form i{
+	position: absolute;
+	top: 18px;
+	right: 390px;
+}
+.load-more{
+	text-align: center;
+	margin: 30px 0;
+}
+.load-more button {
+	padding: 20px 40px;
+	background: transparent;
+	border: none;
+	border: 1px solid black;
+	font-size: 20px;
+
+} 
